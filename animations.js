@@ -51,7 +51,11 @@
       .from('.hero h1', { y: 40, autoAlpha: 0 }, '-=0.45')
       .from('.hero p', { y: 28, autoAlpha: 0 }, '-=0.55')
       .from('.hero .btn', { y: 22, autoAlpha: 0, duration: 0.75 }, '-=0.55')
-      .add(function () { document.querySelectorAll('.hero *').forEach(function (el) { el.style.opacity = ''; }); });
+      .add(function () {
+        document.querySelectorAll('.hero .kicker, .hero h1, .hero p, .hero .btn').forEach(function (el) {
+          el.style.opacity = '';
+        });
+      });
 
     // Parallax: content drifts up & fades, background moves slower
     gsap.to('.hero-inner', {
