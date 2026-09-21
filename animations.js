@@ -45,17 +45,16 @@
 
   /* ---------- 3. Hero (homepage) ---------- */
   if (document.querySelector('.hero')) {
-    var heroTl = gsap.timeline({ defaults: { ease: EASE, duration: 0.95 } });
+    // NOTE: set + explicit end values (not .from) because the CSS pre-hide
+    // rule makes .from() read opacity:0 as its target and never animate in.
+    var heroEls = gsap.utils.toArray('.hero .kicker, .hero h1, .hero p, .hero .btn');
+    gsap.set(heroEls, { y: 30, autoAlpha: 0 });
 
-    heroTl.from('.hero .kicker', { y: 26, autoAlpha: 0, duration: 0.7 })
-      .from('.hero h1', { y: 40, autoAlpha: 0 }, '-=0.45')
-      .from('.hero p', { y: 28, autoAlpha: 0 }, '-=0.55')
-      .from('.hero .btn', { y: 22, autoAlpha: 0, duration: 0.75 }, '-=0.55')
-      .add(function () {
-        document.querySelectorAll('.hero .kicker, .hero h1, .hero p, .hero .btn').forEach(function (el) {
-          el.style.opacity = '';
-        });
-      });
+    gsap.timeline({ defaults: { ease: EASE, duration: 0.9 } })
+      .to('.hero .kicker', { y: 0, autoAlpha: 1, duration: 0.7 })
+      .to('.hero h1', { y: 0, autoAlpha: 1 }, '-=0.45')
+      .to('.hero p', { y: 0, autoAlpha: 1 }, '-=0.5')
+      .to('.hero .btn', { y: 0, autoAlpha: 1, duration: 0.7 }, '-=0.5');
 
     // Parallax: content drifts up & fades, background moves slower
     gsap.to('.hero-inner', {
@@ -124,12 +123,17 @@
   /* ---------- 8. Article pages ---------- */
   if (isArticle) {
     var heroImg = document.querySelector('.post-hero-wrap');
-    var headerTl = gsap.timeline({ defaults: { ease: EASE } });
-    headerTl.from('.single-article .meta', { y: 18, autoAlpha: 0, duration: 0.6 })
-      .from('.single-article h1', { y: 34, autoAlpha: 0, duration: 0.9 }, '-=0.3')
-      .from('.single-article .byline', { y: 20, autoAlpha: 0, duration: 0.7 }, '-=0.55');
+    var headerEls = gsap.utils.toArray('.single-article .meta, .single-article h1, .single-article .byline');
+    gsap.set(headerEls, { y: 28, autoAlpha: 0 });
+
+    var headerTl = gsap.timeline({ defaults: { ease: EASE } })
+      .to('.single-article .meta', { y: 0, autoAlpha: 1, duration: 0.6 })
+      .to('.single-article h1', { y: 0, autoAlpha: 1, duration: 0.85 }, '-=0.3')
+      .to('.single-article .byline', { y: 0, autoAlpha: 1, duration: 0.7 }, '-=0.5');
+
     if (heroImg) {
-      headerTl.from(heroImg, { autoAlpha: 0, y: 26, duration: 0.95 }, '-=0.5');
+      gsap.set(heroImg, { autoAlpha: 0, y: 24 });
+      headerTl.to(heroImg, { autoAlpha: 1, y: 0, duration: 0.9 }, '-=0.45');
     }
 
     // Body blocks rise in as you scroll
