@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Everyday Simple Living — Practical Tips for Home, Money &amp; Daily Life</title>
   <meta name="description" content="Everyday Simple Living shares practical, easy-to-follow tips on home organization, budgeting, routines, and everyday life. Simple ideas that make daily life calmer and better.">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
@@ -14,6 +17,7 @@
     <a class="site-title" href="index.html">Everyday <span>Simple Living</span></a>
     <nav class="main-nav">
       <a href="index.html" class="active">Home</a>
+      <a href="#articles">Articles</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -25,125 +29,74 @@
     <div class="kicker">Home · Money · Habits · Food</div>
     <h1>A Calmer, Simpler Everyday Life</h1>
     <p>Practical guides on home organization, smart budgeting, daily routines, and small habits that quietly make life better — no fluff, just ideas you can use today.</p>
-    <a class="btn" href="#latest">Start Reading</a>
+    <a class="btn" href="#articles">Start Reading</a>
   </div>
 </section>
 
 <div class="container">
-  <main class="content" id="latest">
+  <main class="content">
     <div class="section-head">
-      <h2>Featured Story</h2>
+      <div>
+        <span class="eyebrow">The Journal</span>
+        <h2>Featured Story</h2>
+      </div>
+      <a class="view-all" href="#articles">All articles</a>
     </div>
 
-    <article class="featured">
-      <div class="featured-img">
-        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1000&q=80&auto=format&fit=crop" alt="A calm morning coffee by the window" loading="lazy">
+    <article class="featured" data-reveal>
+      <div class="featured-media parallax-img">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1100&q=80&auto=format&fit=crop" alt="A calm morning with coffee by the window">
+        <span class="chip chip--gold">Editor's Pick</span>
       </div>
       <div class="featured-body">
-        <div class="meta"><span style="color:var(--gold)">✦ Featured</span> · Home · 6 min read</div>
+        <div class="meta">Home · 6 min read</div>
         <h2><a href="posts/easy-morning-routines.html">10 Easy Morning Routine Ideas That Actually Stick</a></h2>
         <p>A good morning doesn't start with a 5 a.m. alarm. These ten small, realistic habits can make your mornings calmer — and they take less than five minutes each.</p>
-        <a class="read-more" href="posts/easy-morning-routines.html">Read the article →</a>
+        <div class="byline-row" style="margin-bottom:22px;">
+          <span class="avatar">ESL</span>
+          <span><strong>Everyday Simple Living</strong></span>
+          <span class="dot"></span>
+          <span>Updated Sep 2026</span>
+        </div>
+        <a class="read-more" href="posts/easy-morning-routines.html">Read the article</a>
       </div>
     </article>
-
-    <div class="section-head">
-      <h2>Latest Articles</h2>
-      <a href="index.html">View all</a>
-    </div>
-
-    <div class="post-grid">
-
-      <article class="card">
-        <div class="card-img">
-          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=900&q=80&auto=format&fit=crop" alt="Fresh healthy meal prep bowls on a table" loading="lazy">
-          <span class="tag">Food</span>
-        </div>
-        <div class="card-body">
-          <div class="meta">Updated Sep 2026 · 7 min read</div>
-          <h3><a href="posts/budget-friendly-meal-planning.html">Budget-Friendly Meal Planning: A Beginner's Guide</a></h3>
-          <p class="excerpt">Meal planning saves money, reduces food waste, and removes the daily "what's for dinner?" stress. A simple step-by-step system for busy weeks.</p>
-          <a class="read-more" href="posts/budget-friendly-meal-planning.html">Read article →</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-img">
-          <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=900&q=80&auto=format&fit=crop" alt="A bright, tidy living room interior" loading="lazy">
-          <span class="tag">Home</span>
-        </div>
-        <div class="card-body">
-          <div class="meta">Updated Sep 2026 · 5 min read</div>
-          <h3><a href="posts/declutter-your-home-15-minutes.html">How to Declutter Your Home in Just 15 Minutes a Day</a></h3>
-          <p class="excerpt">You don't need a whole weekend to get organized. With this 15-minute daily method, any room can feel calmer within a couple of weeks.</p>
-          <a class="read-more" href="posts/declutter-your-home-15-minutes.html">Read article →</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-img">
-          <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=900&q=80&auto=format&fit=crop" alt="Budget planning with a calculator and notebook" loading="lazy">
-          <span class="tag">Money</span>
-        </div>
-        <div class="card-body">
-          <div class="meta">Updated Sep 2026 · 8 min read</div>
-          <h3><a href="posts/beginners-guide-saving-money.html">The Beginner's Guide to Saving Money Every Month</a></h3>
-          <p class="excerpt">Saving money doesn't have to feel like a punishment. Simple budgeting, automatic savings, and painless ways to cut monthly costs.</p>
-          <a class="read-more" href="posts/beginners-guide-saving-money.html">Read article →</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-img">
-          <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=900&q=80&auto=format&fit=crop" alt="Cleaning supplies neatly arranged" loading="lazy">
-          <span class="tag">Habits</span>
-        </div>
-        <div class="card-body">
-          <div class="meta">Updated Sep 2026 · 5 min read</div>
-          <h3><a href="posts/5-minute-cleaning-habits.html">5-Minute Cleaning Habits That Keep Your Home Tidy</a></h3>
-          <p class="excerpt">A tidy home isn't about big cleaning days — it's about tiny habits repeated daily. Five quick habits that quietly keep mess from piling up.</p>
-          <a class="read-more" href="posts/5-minute-cleaning-habits.html">Read article →</a>
-        </div>
-      </article>
-
-    </div>
   </main>
 
   <aside class="sidebar">
-
-    <div class="widget">
-      <img class="about-img" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80&auto=format&fit=crop" alt="Writing and planning at a cozy desk" loading="lazy">
-      <h3 class="widget-title">About This Blog</h3>
-      <p>Everyday Simple Living is about making daily life easier — honest, practical advice on home, money, and habits, written for real people with real schedules. <a href="about.html">Learn more →</a></p>
+    <div class="widget widget-about" data-reveal>
+      <img class="about-img" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&q=75&auto=format&fit=crop" alt="Writing and planning at a cozy desk" loading="lazy">
+      <h3 class="widget-title" style="text-align:center;">About This Blog</h3>
+      <p>Honest, practical advice on home, money, and habits — written for real people with real schedules. <a href="about.html">Learn more →</a></p>
     </div>
 
-    <div class="widget">
+    <div class="widget" data-reveal>
       <h3 class="widget-title">Categories</h3>
       <ul class="cat-list">
         <li>
-          <a href="index.html">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=300&q=70&auto=format&fit=crop" alt="Home and organization" loading="lazy">
+          <a href="#articles">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=200&q=70&auto=format&fit=crop" alt="Home and organization" loading="lazy">
             <span class="cat-name">Home &amp; Organization</span>
             <span class="cat-count">2</span>
           </a>
         </li>
         <li>
-          <a href="index.html">
-            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=300&q=70&auto=format&fit=crop" alt="Money and budgeting" loading="lazy">
+          <a href="#articles">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=200&q=70&auto=format&fit=crop" alt="Money and budgeting" loading="lazy">
             <span class="cat-name">Money &amp; Budgeting</span>
             <span class="cat-count">1</span>
           </a>
         </li>
         <li>
-          <a href="index.html">
-            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=300&q=70&auto=format&fit=crop" alt="Food and meal planning" loading="lazy">
+          <a href="#articles">
+            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=200&q=70&auto=format&fit=crop" alt="Food and meal planning" loading="lazy">
             <span class="cat-name">Food &amp; Meal Planning</span>
             <span class="cat-count">1</span>
           </a>
         </li>
         <li>
-          <a href="index.html">
-            <img src="https://images.unsplash.com/photo-1517705008128-361805f42e86?w=300&q=70&auto=format&fit=crop" alt="Routines and habits" loading="lazy">
+          <a href="#articles">
+            <img src="https://images.unsplash.com/photo-1517705008128-361805f42e86?w=200&q=70&auto=format&fit=crop" alt="Routines and habits" loading="lazy">
             <span class="cat-name">Routines &amp; Habits</span>
             <span class="cat-count">1</span>
           </a>
@@ -151,47 +104,139 @@
       </ul>
     </div>
 
-    <div class="widget">
-      <h3 class="widget-title">Popular Posts</h3>
+    <div class="widget" data-reveal>
+      <h3 class="widget-title">Most Read</h3>
       <ul class="pop-list">
         <li>
           <a href="posts/easy-morning-routines.html">
-            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=300&q=70&auto=format&fit=crop" alt="Morning coffee" loading="lazy">
-            <span class="pop-title">10 Easy Morning Routine Ideas That Actually Stick</span>
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=200&q=70&auto=format&fit=crop" alt="Morning coffee" loading="lazy">
+            <span>
+              <span class="pop-title">10 Easy Morning Routine Ideas That Actually Stick</span>
+              <span class="pop-meta">Home · 6 min</span>
+            </span>
           </a>
         </li>
         <li>
           <a href="posts/beginners-guide-saving-money.html">
-            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=300&q=70&auto=format&fit=crop" alt="Saving money" loading="lazy">
-            <span class="pop-title">The Beginner's Guide to Saving Money Every Month</span>
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=200&q=70&auto=format&fit=crop" alt="Saving money" loading="lazy">
+            <span>
+              <span class="pop-title">The Beginner's Guide to Saving Money Every Month</span>
+              <span class="pop-meta">Money · 8 min</span>
+            </span>
           </a>
         </li>
         <li>
           <a href="posts/declutter-your-home-15-minutes.html">
-            <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=300&q=70&auto=format&fit=crop" alt="Tidy home" loading="lazy">
-            <span class="pop-title">How to Declutter Your Home in Just 15 Minutes a Day</span>
-          </a>
-        </li>
-        <li>
-          <a href="posts/5-minute-cleaning-habits.html">
-            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=300&q=70&auto=format&fit=crop" alt="Cleaning" loading="lazy">
-            <span class="pop-title">5-Minute Cleaning Habits That Keep Your Home Tidy</span>
+            <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=200&q=70&auto=format&fit=crop" alt="Tidy home" loading="lazy">
+            <span>
+              <span class="pop-title">How to Declutter Your Home in 15 Minutes a Day</span>
+              <span class="pop-meta">Home · 5 min</span>
+            </span>
           </a>
         </li>
       </ul>
     </div>
+  </aside>
+</div>
 
-    <div class="widget newsletter">
-      <h3 class="widget-title">Never Miss a Tip</h3>
-      <p style="margin-bottom:14px;">Get new simple-living guides in your inbox. Free, honest, no spam.</p>
-      <form action="mailto:hello@everydaysimpleliving.com" method="post" enctype="text/plain">
+<!-- ================= ARTICLES BAND ================= -->
+<section class="articles-band" id="articles">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Fresh this month</span>
+        <h2>Latest Articles</h2>
+      </div>
+      <a class="view-all" href="#articles">View all</a>
+    </div>
+
+    <div class="article-grid">
+
+      <article class="story" data-reveal-stagger>
+        <a class="story-media parallax-img" href="posts/budget-friendly-meal-planning.html">
+          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=900&q=80&auto=format&fit=crop" alt="Fresh healthy meal prep bowls on a table" loading="lazy">
+          <span class="chip">Food</span>
+          <span class="story-no">01</span>
+        </a>
+        <div class="story-body">
+          <div class="meta">Updated Sep 2026 · 7 min read</div>
+          <h3 class="story-title"><a href="posts/budget-friendly-meal-planning.html">Budget-Friendly Meal Planning: A Beginner's Guide</a></h3>
+          <p class="excerpt">Meal planning saves money, reduces food waste, and removes the daily "what's for dinner?" stress — with a system that survives busy weeks.</p>
+          <div class="story-foot">
+            <span class="byline-row"><span class="avatar">ESL</span><span>Team</span></span>
+            <a class="read-more" href="posts/budget-friendly-meal-planning.html">Read</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="story" data-reveal-stagger>
+        <a class="story-media parallax-img" href="posts/declutter-your-home-15-minutes.html">
+          <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=900&q=80&auto=format&fit=crop" alt="A bright, tidy living room interior" loading="lazy">
+          <span class="chip">Home</span>
+          <span class="story-no">02</span>
+        </a>
+        <div class="story-body">
+          <div class="meta">Updated Sep 2026 · 5 min read</div>
+          <h3 class="story-title"><a href="posts/declutter-your-home-15-minutes.html">How to Declutter Your Home in Just 15 Minutes a Day</a></h3>
+          <p class="excerpt">Forget the heroic weekend overhaul. One timer, three boxes, and fifteen quiet minutes a day can transform any room in your home.</p>
+          <div class="story-foot">
+            <span class="byline-row"><span class="avatar">ESL</span><span>Team</span></span>
+            <a class="read-more" href="posts/declutter-your-home-15-minutes.html">Read</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="story" data-reveal-stagger>
+        <a class="story-media parallax-img" href="posts/beginners-guide-saving-money.html">
+          <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=900&q=80&auto=format&fit=crop" alt="Budget planning with a calculator and notebook" loading="lazy">
+          <span class="chip">Money</span>
+          <span class="story-no">03</span>
+        </a>
+        <div class="story-body">
+          <div class="meta">Updated Sep 2026 · 8 min read</div>
+          <h3 class="story-title"><a href="posts/beginners-guide-saving-money.html">The Beginner's Guide to Saving Money Every Month</a></h3>
+          <p class="excerpt">Saving money isn't about willpower — it's about systems. Automatic transfers, a small emergency fund, and painless cost cuts that stick.</p>
+          <div class="story-foot">
+            <span class="byline-row"><span class="avatar">ESL</span><span>Team</span></span>
+            <a class="read-more" href="posts/beginners-guide-saving-money.html">Read</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="story" data-reveal-stagger>
+        <a class="story-media parallax-img" href="posts/5-minute-cleaning-habits.html">
+          <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=900&q=80&auto=format&fit=crop" alt="Cleaning supplies neatly arranged" loading="lazy">
+          <span class="chip">Habits</span>
+          <span class="story-no">04</span>
+        </a>
+        <div class="story-body">
+          <div class="meta">Updated Sep 2026 · 5 min read</div>
+          <h3 class="story-title"><a href="posts/5-minute-cleaning-habits.html">5-Minute Cleaning Habits That Keep Your Home Tidy</a></h3>
+          <p class="excerpt">A tidy home isn't built on marathon cleaning days — it's built on five-minute habits that catch mess at its cheapest moment.</p>
+          <div class="story-foot">
+            <span class="byline-row"><span class="avatar">ESL</span><span>Team</span></span>
+            <a class="read-more" href="posts/5-minute-cleaning-habits.html">Read</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+<section class="cta-band">
+  <div class="wrap">
+    <div data-reveal>
+      <h2>Never Miss a Tip</h2>
+      <p>Get new simple-living guides in your inbox. Free, honest, and no spam — just useful ideas once a week.</p>
+      <form class="cta-form" action="mailto:hello@everydaysimpleliving.com" method="post" enctype="text/plain">
         <input type="email" name="email" placeholder="Your email address" required>
         <button type="submit">Subscribe</button>
       </form>
     </div>
-
-  </aside>
-</div>
+  </div>
+</section>
 
 <footer class="site-footer">
   <div class="footer-top">
@@ -203,6 +248,7 @@
       <h3>Explore</h3>
       <ul>
         <li><a href="index.html">Home</a></li>
+        <li><a href="#articles">Articles</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -225,6 +271,10 @@
     </span>
   </div>
 </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="animations.js" defer></script>
 
 </body>
 </html>
